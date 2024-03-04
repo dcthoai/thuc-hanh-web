@@ -17,13 +17,22 @@ submitButton.addEventListener('click', function(){
 questionSubmit.addEventListener('click', function(){
     form.innerHTML = `
         <div class="form__answer">
-            <h4>Kết quả của bạn là:</h4>
+            <h4>Điểm của bạn</h4>
 
-            <span class="score">3,4</span>
-            <p class="detail">Số câu đúng: <span class="quantity"></span></p>
+            <span class="score">7.5</span>
+            <p class="detail">Số câu đúng phần 1: <span class="quantity">7/10</span></p>
+            <p class="detail">Số câu đúng phần 2: <span class="quantity">5/10</span></p>
+            <p class="detail">Số câu đúng phần 3: <span class="quantity">10/10</span></p>
+            <p class="detail">Số câu đúng phần 4: <span class="quantity">8/10</span></p>
+
+            <button type="button" id="ok" onclick="returnView()">Ok</button>
         </div>
     `;
 });
+
+function returnView(){
+    window.location.reload();
+}
 
 function checkInfo(){
     let listInputs = formInfo.querySelectorAll('.input');

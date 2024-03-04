@@ -14,33 +14,68 @@
 }
 
 .wrapper .form__info{
-    width: 100%;
-    padding: 24px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 48px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .wrapper .form__info .input{
-    width: 60%;
+    margin-top: 10px;
+    width: 100%;
+    height: 24px;
     margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .wrapper .form__info label{
-    width: 60%;
+    width: 100%;
 }
 
 .wrapper .form__info label .missing{
+    margin-left: 16px;
     display: none;
     color: #ff504f;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
 }
 
+.wrapper .form__info button{
+    width: 120px;
+    margin-top: 24px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bd4f;
+    color: #fff;
+}
+
+.wrapper .form__info button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .wrapper .form__question{
-    width: 100%;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 24px;
     display: none;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.wrapper .form__question .question-text{
+    margin-bottom: 64px;
+}
+
+.wrapper .form__question textarea{
+    width: 100%;
 }
 
 .wrapper .form__answer{
@@ -52,5 +87,56 @@
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 16px 24px;
+    padding: 16px 40px;
+    padding-bottom: 80px;
+}
+
+.wrapper .form__answer h4{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .form__answer .score{
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    color: #00bd4f;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#question-submit{
+    position: absolute;
+    left: calc(50% - 60px);
+    width: 120px;
+    margin-top: 24px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bd4f;
+    color: #fff;
+}
+
+#question-submit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#ok{
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    margin-top: 16px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00bd4f;
+    color: #fff;
+}
+
+#ok:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
