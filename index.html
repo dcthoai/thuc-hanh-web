@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h4 class="heading">Khảo sát</h4>
+
+        <div class="form" id="form">
+            <div class="form__info">
+                <label for="name">Họ và tên: <span class="missing">Vui lòng nhập trường này!</span></label>
+                <input name="name" type="text" class="input" id="name">
+
+                <label for="birthday">Ngày sinh: <span class="missing">Vui lòng nhập trường này!</span></label>
+                <input name="birthday" type="date" class="input" id="birthday"/>
+
+                <label for="cccd">Số Căn cước công dân: <span class="missing">Vui lòng nhập trường này!</span></label>
+                <input name="cccd" type="text" class="input" id="cccd">
+
+                <label for="address">Địa chỉ: <span class="missing">Vui lòng nhập trường này!</span></label>
+                <input name="address" type="text" class="input" id="address">
+
+                <button type="button" id="submit-info">Submit</button>
+            </div>
+
+            <div class="form__question">
+                <div class="question-boolean">
+                    <h4 class="title">Chọn đúng hoặc sai:</h4>
+
+                    <input name="boolean" type="radio" class="input">
+                    <label for="boolean">Đúng</label>
+
+                    <input name="boolean" type="radio" class="input" />
+                    <label for="boolean">Sai</label>
+                </div>
+
+                <div class="question-choose">
+                    <h4 class="title">Chọn một trong bốn đáp án:</h4>
+
+                    <input name="choose" type="radio" class="input">
+                    <label for="choose">Đáp án 1</label><br>
+
+                    <input name="choose" type="radio" class="input" />
+                    <label for="choose">Đáp án 2</label><br>
+
+                    <input name="choose" type="radio" class="input">
+                    <label for="choose">Đáp án 3</label><br>
+
+                    <input name="choose" type="radio" class="input" />
+                    <label for="choose">Đáp án 4</label><br>
+                </div>
+
+                <div class="question-checkbox">
+                    <h4 class="title">Chọn một trong bốn đáp án:</h4>
+
+                    <input name="checkbox" type="checkbox" class="input">
+                    <label for="checkbox">Đáp án 1</label><br>
+
+                    <input name="checkbox" type="checkbox" class="input" />
+                    <label for="checkbox">Đáp án 2</label><br>
+
+                    <input name="checkbox" type="checkbox" class="input">
+                    <label for="checkbox">Đáp án 3</label><br>
+
+                    <input name="checkbox" type="checkbox" class="input" />
+                    <label for="checkbox">Đáp án 4</label><br>
+                </div>
+
+                <div class="question-text">
+                    <h4 class="title">Viết câu trả lời tự luận vào form:</h4>
+                    <textarea name="textarea" cols="56" rows="10"></textarea>
+                </div>
+
+                <button id="question-submit" type="button">Nộp bài</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
